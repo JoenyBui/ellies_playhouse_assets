@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#E8F0F8" rx="20"/>
+  <!-- tail_elk -->
+  <g id="tail_elk">
+    <ellipse cx="341" cy="360" rx="12" ry="10" fill="#9B7653" stroke="#3D2B1F" stroke-width="3"/>
+  </g>
+  <!-- body_elk -->
+  <g id="body_elk">
+    <ellipse cx="256" cy="345" rx="85" ry="95" fill="#9B7653" stroke="#3D2B1F" stroke-width="5"/>
+  <ellipse cx="256" cy="350" rx="60" ry="75" fill="#F0DCC0"/>
+  <rect x="236" y="275" width="40" height="30" fill="#9B7653"/>
+  </g>
+  <!-- legs_elk -->
+  <g id="legs_elk">
+    <ellipse cx="226" cy="435" rx="22" ry="32" fill="#9B7653" stroke="#3D2B1F" stroke-width="5"/>
+  <ellipse cx="226" cy="480" rx="24" ry="12" fill="#5C4033" stroke="#3D2B1F" stroke-width="3"/>
+  <ellipse cx="286" cy="435" rx="22" ry="32" fill="#9B7653" stroke="#3D2B1F" stroke-width="5"/>
+  <ellipse cx="286" cy="480" rx="24" ry="12" fill="#5C4033" stroke="#3D2B1F" stroke-width="3"/>
+  </g>
+  <!-- arms_elk -->
+  <g id="arms_elk">
+    <ellipse cx="151" cy="330" rx="22" ry="35" fill="#9B7653" stroke="#3D2B1F" stroke-width="5" transform="rotate(-15, 151, 330)"/>
+  <circle cx="141" cy="360" r="16" fill="#9B7653" stroke="#3D2B1F" stroke-width="3"/>
+  <ellipse cx="361" cy="330" rx="22" ry="35" fill="#9B7653" stroke="#3D2B1F" stroke-width="5" transform="rotate(15, 361, 330)"/>
+  <circle cx="371" cy="360" r="16" fill="#9B7653" stroke="#3D2B1F" stroke-width="3"/>
+  </g>
+  <!-- head_elk -->
+  <g id="head_elk">
+    <ellipse cx="256" cy="175" rx="115" ry="110" fill="#9B7653" stroke="#3D2B1F" stroke-width="5"/>
+  <ellipse cx="256" cy="185" rx="85" ry="80" fill="#F0DCC0"/>
+  </g>
+  <!-- ears_elk -->
+  <g id="ears_elk">
+    <ellipse cx="181" cy="70" rx="16" ry="20" fill="#9B7653" stroke="#3D2B1F" stroke-width="3"/>
+  <ellipse cx="181" cy="70" rx="9" ry="12" fill="#F0DCC0"/>
+  <ellipse cx="331" cy="70" rx="16" ry="20" fill="#9B7653" stroke="#3D2B1F" stroke-width="3"/>
+  <ellipse cx="331" cy="70" rx="9" ry="12" fill="#F0DCC0"/>
+  <path d="M 201 70 Q 186 40 176 10" fill="none" stroke="#8B6B42" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 186 45 Q 166 35 161 20" fill="none" stroke="#8B6B42" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 179 20 Q 161 15 156 0" fill="none" stroke="#8B6B42" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="176" cy="10" r="4" fill="#8B6B42" stroke="#5C4033" stroke-width="2"/>
+  <circle cx="161" cy="20" r="4" fill="#8B6B42" stroke="#5C4033" stroke-width="2"/>
+  <circle cx="156" cy="0" r="4" fill="#8B6B42" stroke="#5C4033" stroke-width="2"/>
+  <path d="M 311 70 Q 326 40 336 10" fill="none" stroke="#8B6B42" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 326 45 Q 346 35 351 20" fill="none" stroke="#8B6B42" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 333 20 Q 351 15 356 0" fill="none" stroke="#8B6B42" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="336" cy="10" r="4" fill="#8B6B42" stroke="#5C4033" stroke-width="2"/>
+  <circle cx="351" cy="20" r="4" fill="#8B6B42" stroke="#5C4033" stroke-width="2"/>
+  <circle cx="356" cy="0" r="4" fill="#8B6B42" stroke="#5C4033" stroke-width="2"/>
+  </g>
+  <!-- eyes_happy -->
+  <g id="eyes_happy">
+    <ellipse cx="208" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="205" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="205" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="202" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="207" cy="174" r="2.5" fill="#FFFFFF"/>
+  <ellipse cx="304" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="307" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="307" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="310" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="305" cy="174" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <!-- nose_snout -->
+  <g id="nose_snout">
+    <ellipse cx="256" cy="204" rx="18" ry="12" fill="#D4A87A" stroke="#8B6B4A" stroke-width="3"/>
+  <ellipse cx="250" cy="205" rx="3.5" ry="4" fill="#6B4A30"/>
+  <ellipse cx="262" cy="205" rx="3.5" ry="4" fill="#6B4A30"/>
+  </g>
+  <!-- mouth_smile -->
+  <g id="mouth_smile">
+    <path d="M 234 220 Q 256 238 278 220" fill="none" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

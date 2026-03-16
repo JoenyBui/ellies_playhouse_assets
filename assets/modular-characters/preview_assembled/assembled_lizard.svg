@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#E8F0F8" rx="20"/>
+  <!-- tail_lizard -->
+  <g id="tail_lizard">
+    <path d="M 331 365 Q 381 375 401 405 Q 416 430 406 445" fill="none" stroke="#7BC45A" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="361" cy="380" r="4.0" fill="#E8C83A"/>
+  <circle cx="386" cy="405" r="3.5" fill="#E8C83A"/>
+  <circle cx="403" cy="430" r="3.0" fill="#E8C83A"/>
+  </g>
+  <!-- body_lizard -->
+  <g id="body_lizard">
+    <ellipse cx="256" cy="345" rx="85" ry="95" fill="#7BC45A" stroke="#2D5A1F" stroke-width="5"/>
+  <ellipse cx="256" cy="350" rx="60" ry="75" fill="#C8E8B0"/>
+  <rect x="236" y="275" width="40" height="30" fill="#7BC45A"/>
+  </g>
+  <!-- legs_lizard -->
+  <g id="legs_lizard">
+    <ellipse cx="226" cy="435" rx="22" ry="32" fill="#7BC45A" stroke="#2D5A1F" stroke-width="5"/>
+  <ellipse cx="226" cy="480" rx="24" ry="12" fill="#E8C83A" stroke="#2D5A1F" stroke-width="3"/>
+  <ellipse cx="286" cy="435" rx="22" ry="32" fill="#7BC45A" stroke="#2D5A1F" stroke-width="5"/>
+  <ellipse cx="286" cy="480" rx="24" ry="12" fill="#E8C83A" stroke="#2D5A1F" stroke-width="3"/>
+  </g>
+  <!-- arms_lizard -->
+  <g id="arms_lizard">
+    <ellipse cx="151" cy="330" rx="22" ry="35" fill="#7BC45A" stroke="#2D5A1F" stroke-width="5" transform="rotate(-15, 151, 330)"/>
+  <circle cx="141" cy="360" r="16" fill="#7BC45A" stroke="#2D5A1F" stroke-width="3"/>
+  <ellipse cx="361" cy="330" rx="22" ry="35" fill="#7BC45A" stroke="#2D5A1F" stroke-width="5" transform="rotate(15, 361, 330)"/>
+  <circle cx="371" cy="360" r="16" fill="#7BC45A" stroke="#2D5A1F" stroke-width="3"/>
+  </g>
+  <!-- head_lizard -->
+  <g id="head_lizard">
+    <ellipse cx="256" cy="175" rx="115" ry="110" fill="#7BC45A" stroke="#2D5A1F" stroke-width="5"/>
+  <ellipse cx="256" cy="185" rx="85" ry="80" fill="#C8E8B0"/>
+  </g>
+  <!-- ears_lizard -->
+  <g id="ears_lizard">
+    <circle cx="216" cy="66" r="6" fill="#E8C83A" stroke="#2D5A1F" stroke-width="2"/>
+  <circle cx="236" cy="63" r="7" fill="#E8C83A" stroke="#2D5A1F" stroke-width="2"/>
+  <circle cx="256" cy="60" r="8" fill="#E8C83A" stroke="#2D5A1F" stroke-width="2"/>
+  <circle cx="276" cy="63" r="7" fill="#E8C83A" stroke="#2D5A1F" stroke-width="2"/>
+  <circle cx="296" cy="66" r="6" fill="#E8C83A" stroke="#2D5A1F" stroke-width="2"/>
+  </g>
+  <!-- markings_lizard -->
+  <g id="markings_lizard">
+    <circle cx="216" cy="145" r="5" fill="#E8C83A"/>
+  <circle cx="291" cy="135" r="4" fill="#E8C83A"/>
+  <circle cx="236" cy="120" r="3.5" fill="#E8C83A"/>
+  <circle cx="306" cy="155" r="4" fill="#E8C83A"/>
+  <circle cx="216" cy="325" r="5" fill="#E8C83A"/>
+  <circle cx="301" cy="335" r="4.5" fill="#E8C83A"/>
+  <circle cx="226" cy="370" r="4" fill="#E8C83A"/>
+  <circle cx="291" cy="375" r="3.5" fill="#E8C83A"/>
+  </g>
+  <!-- eyes_happy -->
+  <g id="eyes_happy">
+    <ellipse cx="208" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="205" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="205" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="202" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="207" cy="174" r="2.5" fill="#FFFFFF"/>
+  <ellipse cx="304" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="307" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="307" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="310" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="305" cy="174" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <!-- nose_round -->
+  <g id="nose_round">
+    <ellipse cx="256" cy="200" rx="10" ry="8" fill="#2D2D2D" stroke="#1A1A1A" stroke-width="2"/>
+  <circle cx="253" cy="198" r="2.5" fill="#555555"/>
+  </g>
+  <!-- mouth_smile -->
+  <g id="mouth_smile">
+    <path d="M 234 220 Q 256 238 278 220" fill="none" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

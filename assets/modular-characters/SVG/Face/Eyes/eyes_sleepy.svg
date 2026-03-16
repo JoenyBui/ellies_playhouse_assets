@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <clipPath id="sleepy_clip_0"><rect x="181" y="168" width="54" height="32"/></clipPath>
+  <ellipse cx="208" cy="170" rx="20" ry="20" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4" clip-path="url(#sleepy_clip_0)"/>
+  <circle cx="208" cy="174" r="12" fill="#5C3A1A" clip-path="url(#sleepy_clip_0)"/>
+  <path d="M 184 170 Q 208 164 232 170" fill="none" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round"/>
+  <clipPath id="sleepy_clip_1"><rect x="277" y="168" width="54" height="32"/></clipPath>
+  <ellipse cx="304" cy="170" rx="20" ry="20" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4" clip-path="url(#sleepy_clip_1)"/>
+  <circle cx="304" cy="174" r="12" fill="#5C3A1A" clip-path="url(#sleepy_clip_1)"/>
+  <path d="M 280 170 Q 304 164 328 170" fill="none" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round"/>
+</svg>

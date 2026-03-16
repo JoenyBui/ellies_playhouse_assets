@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modular Animal Character Preview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    padding: 20px;
+  }
+  h1 { text-align: center; margin-bottom: 10px; color: #2d4a5e; }
+  h2 { margin: 20px 0 10px; color: #4a6b7a; border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+  h3 { margin: 15px 0 8px; color: #6b8a9a; }
+
+  .character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .character-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .character-card h4 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #4a6b7a;
+  }
+  .assembly-canvas {
+    position: relative;
+    width: 256px;
+    height: 256px;
+    margin: 0 auto;
+    background: #e8f0f8;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .assembly-canvas img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+
+  .parts-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .part-thumb {
+    background: white;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100px;
+  }
+  .part-thumb img {
+    width: 80px; height: 80px;
+  }
+  .part-thumb span {
+    display: block;
+    font-size: 10px;
+    color: #888;
+    margin-top: 2px;
+    word-break: break-all;
+  }
+
+  .builder-section {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .builder-canvas {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #e8f4fc, #f0e8fc);
+    border-radius: 12px;
+    border: 3px dashed #ccc;
+  }
+  .builder-canvas img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+  select {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin: 4px;
+  }
+  .controls { text-align: center; margin: 10px 0; }
+  .controls label { font-weight: 600; margin-right: 5px; }
+</style>
+</head>
+<body>
+
+<h1>Modular Animal Character Preview</h1>
+<p style="text-align:center;color:#888;margin-bottom:20px;">103 SVG assets - all on a shared 512x512 coordinate system for perfect layering</p>
+
+<!-- Interactive Builder -->
+<div class="builder-section">
+  <h2>Interactive Character Builder</h2>
+  <div class="builder-canvas" id="builder">
+    <!-- Layers get added here by JS -->
+  </div>
+  <div class="controls">
+    <label>Animal:</label>
+    <select id="sel-animal" onchange="updateBuilder()">
+      <option value="tiger">Tiger</option>
+      <option value="panda">Panda</option>
+      <option value="koala">Koala</option>
+      <option value="wolf">Wolf</option>
+      <option value="elk">Elk</option>
+      <option value="chicken">Chicken</option>
+      <option value="cardinal">Cardinal</option>
+      <option value="whale">Whale</option>
+      <option value="water_buffalo">Water Buffalo</option>
+      <option value="lizard">Lizard</option>
+    </select>
+
+    <label>Eyes:</label>
+    <select id="sel-eyes" onchange="updateBuilder()">
+      <option value="eyes_happy">Happy</option>
+      <option value="eyes_surprised">Surprised</option>
+      <option value="eyes_sad">Sad</option>
+      <option value="eyes_angry">Angry</option>
+      <option value="eyes_sleepy">Sleepy</option>
+      <option value="eyes_wink">Wink</option>
+    </select>
+
+    <label>Mouth:</label>
+    <select id="sel-mouth" onchange="updateBuilder()">
+      <option value="mouth_smile">Smile</option>
+      <option value="mouth_open_smile">Open Smile</option>
+      <option value="mouth_oh">Oh!</option>
+      <option value="mouth_sad">Sad</option>
+      <option value="mouth_tongue">Tongue</option>
+      <option value="mouth_teeth">Teeth</option>
+    </select>
+
+    <label>Nose:</label>
+    <select id="sel-nose" onchange="updateBuilder()">
+      <option value="nose_round">Round</option>
+      <option value="nose_triangle">Triangle</option>
+      <option value="nose_beak_short">Beak (short)</option>
+      <option value="nose_beak_pointed">Beak (pointed)</option>
+      <option value="nose_snout">Snout</option>
+    </select>
+    <br><br>
+    <label>Hat:</label>
+    <select id="sel-hat" onchange="updateBuilder()">
+      <option value="">None</option>
+      <option value="hat_crown">Crown</option>
+      <option value="hat_party">Party</option>
+      <option value="hat_cowboy">Cowboy</option>
+      <option value="hat_beanie">Beanie</option>
+      <option value="hat_tophat">Top Hat</option>
+    </select>
+
+    <label>Glasses:</label>
+    <select id="sel-glasses" onchange="updateBuilder()">
+      <option value="">None</option>
+      <option value="glasses_round">Round</option>
+      <option value="glasses_sunglasses">Sunglasses</option>
+    </select>
+
+    <label>Neckwear:</label>
+    <select id="sel-neck" onchange="updateBuilder()">
+      <option value="">None</option>
+      <option value="neck_bowtie">Bowtie</option>
+      <option value="neck_scarf">Scarf</option>
+      <option value="neck_necklace">Necklace</option>
+    </select>
+  </div>
+</div>
+
+<!-- All Assembled Characters -->
+<h2>All 10 Animals (Default Assembly)</h2>
+<div class="character-grid" id="assembled-grid"></div>
+
+<!-- Individual Parts Gallery -->
+<h2>Face Parts</h2>
+<h3>Eyes</h3>
+<div class="parts-row" id="parts-eyes"></div>
+<h3>Mouths</h3>
+<div class="parts-row" id="parts-mouths"></div>
+<h3>Eyebrows</h3>
+<div class="parts-row" id="parts-eyebrows"></div>
+<h3>Noses</h3>
+<div class="parts-row" id="parts-noses"></div>
+
+<h2>Accessories</h2>
+<h3>Hats</h3>
+<div class="parts-row" id="parts-hats"></div>
+<h3>Glasses</h3>
+<div class="parts-row" id="parts-glasses"></div>
+<h3>Neckwear</h3>
+<div class="parts-row" id="parts-neckwear"></div>
+<h3>Props</h3>
+<div class="parts-row" id="parts-props"></div>
+
+<script>
+const animals = ['tiger','panda','koala','wolf','elk','chicken','cardinal','whale','water_buffalo','lizard'];
+
+const defaultNose = {
+  tiger: 'nose_triangle', panda: 'nose_round', koala: 'nose_round',
+  wolf: 'nose_triangle', elk: 'nose_snout', chicken: 'nose_beak_short',
+  cardinal: 'nose_beak_pointed', whale: 'nose_round',
+  water_buffalo: 'nose_snout', lizard: 'nose_round'
+};
+
+// Build assembled character grid
+const grid = document.getElementById('assembled-grid');
+animals.forEach(animal => {
+  const card = document.createElement('div');
+  card.className = 'character-card';
+  card.innerHTML = `
+    <h4>${animal.replace('_',' ')}</h4>
+    <div class="assembly-canvas">
+      <img src="SVG/Tail/tail_${animal}.svg">
+      <img src="SVG/Body/body_${animal}.svg">
+      <img src="SVG/Legs/legs_${animal}.svg">
+      <img src="SVG/Arms/arms_${animal}.svg">
+      <img src="SVG/Head/head_${animal}.svg">
+      <img src="SVG/Ears/ears_${animal}.svg">
+      <img src="SVG/Markings/markings_${animal}.svg">
+      <img src="SVG/Face/Eyes/eyes_happy.svg">
+      <img src="SVG/Face/Nose/${defaultNose[animal]}.svg">
+      <img src="SVG/Face/Mouth/mouth_smile.svg">
+    </div>`;
+  grid.appendChild(card);
+});
+
+// Parts galleries
+function addParts(containerId, paths) {
+  const container = document.getElementById(containerId);
+  paths.forEach(p => {
+    const name = p.split('/').pop().replace('.svg','');
+    container.innerHTML += `
+      <div class="part-thumb">
+        <img src="${p}">
+        <span>${name}</span>
+      </div>`;
+  });
+}
+
+addParts('parts-eyes', [
+  'SVG/Face/Eyes/eyes_happy.svg','SVG/Face/Eyes/eyes_surprised.svg',
+  'SVG/Face/Eyes/eyes_sad.svg','SVG/Face/Eyes/eyes_angry.svg',
+  'SVG/Face/Eyes/eyes_sleepy.svg','SVG/Face/Eyes/eyes_wink.svg'
+]);
+addParts('parts-mouths', [
+  'SVG/Face/Mouth/mouth_smile.svg','SVG/Face/Mouth/mouth_open_smile.svg',
+  'SVG/Face/Mouth/mouth_oh.svg','SVG/Face/Mouth/mouth_sad.svg',
+  'SVG/Face/Mouth/mouth_tongue.svg','SVG/Face/Mouth/mouth_teeth.svg'
+]);
+addParts('parts-eyebrows', [
+  'SVG/Face/Eyebrows/brow_neutral.svg','SVG/Face/Eyebrows/brow_raised.svg',
+  'SVG/Face/Eyebrows/brow_angry.svg','SVG/Face/Eyebrows/brow_sad.svg'
+]);
+addParts('parts-noses', [
+  'SVG/Face/Nose/nose_round.svg','SVG/Face/Nose/nose_triangle.svg',
+  'SVG/Face/Nose/nose_beak_short.svg','SVG/Face/Nose/nose_beak_pointed.svg',
+  'SVG/Face/Nose/nose_snout.svg'
+]);
+addParts('parts-hats', [
+  'SVG/Accessories/Hats/hat_crown.svg','SVG/Accessories/Hats/hat_party.svg',
+  'SVG/Accessories/Hats/hat_cowboy.svg','SVG/Accessories/Hats/hat_beanie.svg',
+  'SVG/Accessories/Hats/hat_tophat.svg'
+]);
+addParts('parts-glasses', [
+  'SVG/Accessories/Glasses/glasses_round.svg',
+  'SVG/Accessories/Glasses/glasses_sunglasses.svg'
+]);
+addParts('parts-neckwear', [
+  'SVG/Accessories/Neckwear/neck_bowtie.svg',
+  'SVG/Accessories/Neckwear/neck_scarf.svg',
+  'SVG/Accessories/Neckwear/neck_necklace.svg'
+]);
+addParts('parts-props', [
+  'SVG/Accessories/Props/prop_balloon.svg',
+  'SVG/Accessories/Props/prop_flower.svg'
+]);
+
+// Interactive builder
+function updateBuilder() {
+  const animal = document.getElementById('sel-animal').value;
+  const eyes = document.getElementById('sel-eyes').value;
+  const mouth = document.getElementById('sel-mouth').value;
+  const nose = document.getElementById('sel-nose').value;
+  const hat = document.getElementById('sel-hat').value;
+  const glasses = document.getElementById('sel-glasses').value;
+  const neck = document.getElementById('sel-neck').value;
+
+  const builder = document.getElementById('builder');
+  let layers = [
+    `SVG/Tail/tail_${animal}.svg`,
+    `SVG/Body/body_${animal}.svg`,
+    `SVG/Legs/legs_${animal}.svg`,
+    `SVG/Arms/arms_${animal}.svg`,
+    `SVG/Head/head_${animal}.svg`,
+    `SVG/Ears/ears_${animal}.svg`,
+    `SVG/Markings/markings_${animal}.svg`,
+    `SVG/Face/Eyes/${eyes}.svg`,
+    `SVG/Face/Nose/${nose}.svg`,
+    `SVG/Face/Mouth/${mouth}.svg`,
+  ];
+  if (hat) layers.push(`SVG/Accessories/Hats/${hat}.svg`);
+  if (glasses) layers.push(`SVG/Accessories/Glasses/${glasses}.svg`);
+  if (neck) layers.push(`SVG/Accessories/Neckwear/${neck}.svg`);
+
+  builder.innerHTML = layers.map(l =>
+    `<img src="${l}" onerror="this.style.display='none'">`
+  ).join('');
+}
+
+updateBuilder();
+</script>
+</body>
+</html>

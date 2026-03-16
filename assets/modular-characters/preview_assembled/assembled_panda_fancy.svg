@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#E8F0F8" rx="20"/>
+  <!-- tail_panda -->
+  <g id="tail_panda">
+    <circle cx="339" cy="360" r="14" fill="#2D2D2D" stroke="#1A1A1A" stroke-width="3"/>
+  </g>
+  <!-- body_panda -->
+  <g id="body_panda">
+    <ellipse cx="256" cy="345" rx="85" ry="95" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="5"/>
+  <ellipse cx="256" cy="350" rx="60" ry="75" fill="#FFFFFF"/>
+  <rect x="236" y="275" width="40" height="30" fill="#FAFAFA"/>
+  </g>
+  <!-- legs_panda -->
+  <g id="legs_panda">
+    <ellipse cx="226" cy="435" rx="22" ry="32" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="5"/>
+  <ellipse cx="226" cy="480" rx="24" ry="12" fill="#2D2D2D" stroke="#1A1A1A" stroke-width="3"/>
+  <ellipse cx="286" cy="435" rx="22" ry="32" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="5"/>
+  <ellipse cx="286" cy="480" rx="24" ry="12" fill="#2D2D2D" stroke="#1A1A1A" stroke-width="3"/>
+  </g>
+  <!-- arms_panda -->
+  <g id="arms_panda">
+    <ellipse cx="151" cy="330" rx="22" ry="35" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="5" transform="rotate(-15, 151, 330)"/>
+  <circle cx="141" cy="360" r="16" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="3"/>
+  <ellipse cx="361" cy="330" rx="22" ry="35" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="5" transform="rotate(15, 361, 330)"/>
+  <circle cx="371" cy="360" r="16" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="3"/>
+  </g>
+  <!-- head_panda -->
+  <g id="head_panda">
+    <ellipse cx="256" cy="175" rx="115" ry="110" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="5"/>
+  <ellipse cx="208" cy="170" rx="30" ry="26" fill="#2D2D2D" transform="rotate(-15, 208, 170)"/>
+  <ellipse cx="304" cy="170" rx="30" ry="26" fill="#2D2D2D" transform="rotate(15, 304, 170)"/>
+  </g>
+  <!-- ears_panda -->
+  <g id="ears_panda">
+    <circle cx="174" cy="57" r="30" fill="#2D2D2D" stroke="#1A1A1A" stroke-width="5"/>
+  <circle cx="338" cy="57" r="30" fill="#2D2D2D" stroke="#1A1A1A" stroke-width="5"/>
+  </g>
+  <!-- eyes_happy -->
+  <g id="eyes_happy">
+    <ellipse cx="208" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="205" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="205" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="202" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="207" cy="174" r="2.5" fill="#FFFFFF"/>
+  <ellipse cx="304" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="307" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="307" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="310" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="305" cy="174" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <!-- nose_round -->
+  <g id="nose_round">
+    <ellipse cx="256" cy="200" rx="10" ry="8" fill="#2D2D2D" stroke="#1A1A1A" stroke-width="2"/>
+  <circle cx="253" cy="198" r="2.5" fill="#555555"/>
+  </g>
+  <!-- mouth_open_smile -->
+  <g id="mouth_open_smile">
+    <path d="M 232 220 Q 256 248 280 220" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="256" cy="234" rx="10" ry="7" fill="#E86B6B"/>
+  <path d="M 236 222 L 276 222" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- hat_crown -->
+  <g id="hat_crown">
+    <polygon points="206,75 206,40 226,55 241,25 256,45 271,25 286,55 306,40 306,75" fill="#FFD700" stroke="#DAA520" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="231" cy="52" r="4" fill="#E83A3A"/>
+  <circle cx="256" cy="40" r="4" fill="#3A8AE8"/>
+  <circle cx="281" cy="52" r="4" fill="#3AE83A"/>
+  <rect x="204" y="70" width="104" height="10" fill="#DAA520" rx="3" ry="3"/>
+  </g>
+  <!-- neck_bowtie -->
+  <g id="neck_bowtie">
+    <polygon points="256,295 226,280 226,310" fill="#E83A3A" stroke="#B82A2A" stroke-width="2" stroke-linejoin="round"/>
+  <polygon points="256,295 286,280 286,310" fill="#E83A3A" stroke="#B82A2A" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="256" cy="295" r="6" fill="#B82A2A"/>
+  </g>
+</svg>

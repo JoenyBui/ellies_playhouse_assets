@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#E8F0F8" rx="20"/>
+  <!-- tail_wolf -->
+  <g id="tail_wolf">
+    <path d="M 331 365 Q 381 335 386 385 Q 391 415 366 420 Q 341 415 326 395 Z" fill="#8E9EAB" stroke="#3A444D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 366 420 Q 376 405 371 390" fill="none" stroke="#D4DDE3" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- body_wolf -->
+  <g id="body_wolf">
+    <ellipse cx="256" cy="345" rx="85" ry="95" fill="#8E9EAB" stroke="#3A444D" stroke-width="5"/>
+  <ellipse cx="256" cy="350" rx="60" ry="75" fill="#D4DDE3"/>
+  <rect x="236" y="275" width="40" height="30" fill="#8E9EAB"/>
+  </g>
+  <!-- legs_wolf -->
+  <g id="legs_wolf">
+    <ellipse cx="226" cy="435" rx="22" ry="32" fill="#8E9EAB" stroke="#3A444D" stroke-width="5"/>
+  <ellipse cx="226" cy="480" rx="24" ry="12" fill="#5C6B76" stroke="#3A444D" stroke-width="3"/>
+  <ellipse cx="286" cy="435" rx="22" ry="32" fill="#8E9EAB" stroke="#3A444D" stroke-width="5"/>
+  <ellipse cx="286" cy="480" rx="24" ry="12" fill="#5C6B76" stroke="#3A444D" stroke-width="3"/>
+  </g>
+  <!-- arms_wolf -->
+  <g id="arms_wolf">
+    <ellipse cx="151" cy="330" rx="22" ry="35" fill="#8E9EAB" stroke="#3A444D" stroke-width="5" transform="rotate(-15, 151, 330)"/>
+  <circle cx="141" cy="360" r="16" fill="#8E9EAB" stroke="#3A444D" stroke-width="3"/>
+  <ellipse cx="361" cy="330" rx="22" ry="35" fill="#8E9EAB" stroke="#3A444D" stroke-width="5" transform="rotate(15, 361, 330)"/>
+  <circle cx="371" cy="360" r="16" fill="#8E9EAB" stroke="#3A444D" stroke-width="3"/>
+  </g>
+  <!-- head_wolf -->
+  <g id="head_wolf">
+    <ellipse cx="256" cy="175" rx="115" ry="110" fill="#8E9EAB" stroke="#3A444D" stroke-width="5"/>
+  <ellipse cx="256" cy="185" rx="85" ry="80" fill="#D4DDE3"/>
+  </g>
+  <!-- ears_wolf -->
+  <g id="ears_wolf">
+    <polygon points="186,20 211,80 161,80" fill="#8E9EAB" stroke="#3A444D" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="186,35 200,73 172,73" fill="#D4DDE3"/>
+  <polygon points="326,20 301,80 351,80" fill="#8E9EAB" stroke="#3A444D" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="326,35 312,73 340,73" fill="#D4DDE3"/>
+  </g>
+  <!-- eyes_happy -->
+  <g id="eyes_happy">
+    <ellipse cx="208" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="205" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="205" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="202" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="207" cy="174" r="2.5" fill="#FFFFFF"/>
+  <ellipse cx="304" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="307" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="307" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="310" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="305" cy="174" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <!-- nose_triangle -->
+  <g id="nose_triangle">
+    <polygon points="256,208 246,195 266,195" fill="#2D2D2D" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="254" cy="198" r="2" fill="#555555"/>
+  </g>
+  <!-- mouth_smile -->
+  <g id="mouth_smile">
+    <path d="M 234 220 Q 256 238 278 220" fill="none" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

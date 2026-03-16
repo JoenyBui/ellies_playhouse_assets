@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#E8F0F8" rx="20"/>
+  <!-- tail_chicken -->
+  <g id="tail_chicken">
+    <ellipse cx="156" cy="345" rx="25" ry="10" fill="#E8943A" stroke="#6B3A15" stroke-width="2" transform="rotate(-30, 156, 345)"/>
+  <ellipse cx="156" cy="353" rx="25" ry="10" fill="#D4722B" stroke="#6B3A15" stroke-width="2" transform="rotate(-15, 156, 353)"/>
+  <ellipse cx="156" cy="361" rx="25" ry="10" fill="#E8943A" stroke="#6B3A15" stroke-width="2" transform="rotate(0, 156, 361)"/>
+  </g>
+  <!-- body_chicken -->
+  <g id="body_chicken">
+    <ellipse cx="256" cy="345" rx="80" ry="100" fill="#E8943A" stroke="#6B3A15" stroke-width="5"/>
+  <ellipse cx="256" cy="350" rx="55" ry="70" fill="#FCE4C0"/>
+  <rect x="236" y="275" width="40" height="30" fill="#E8943A"/>
+  </g>
+  <!-- legs_chicken -->
+  <g id="legs_chicken">
+    <rect x="227" y="410" width="8" height="50" fill="#E8943A" rx="4" ry="4" stroke="#6B3A15" stroke-width="2"/>
+  <path d="M 231 480 L 219 493" fill="none" stroke="#E8943A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 231 480 L 231 493" fill="none" stroke="#E8943A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 231 480 L 243 493" fill="none" stroke="#E8943A" stroke-width="4" stroke-linecap="round"/>
+  <rect x="277" y="410" width="8" height="50" fill="#E8943A" rx="4" ry="4" stroke="#6B3A15" stroke-width="2"/>
+  <path d="M 281 480 L 269 493" fill="none" stroke="#E8943A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 281 480 L 281 493" fill="none" stroke="#E8943A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 281 480 L 293 493" fill="none" stroke="#E8943A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <!-- arms_chicken -->
+  <g id="arms_chicken">
+    <path d="M 171 315 Q 146 300 131 315 Q 126 330 136 340 Q 146 345 161 340 Q 176 335 171 315 Z" fill="#E8943A" stroke="#6B3A15" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 341 315 Q 366 300 381 315 Q 386 330 376 340 Q 366 345 351 340 Q 336 335 341 315 Z" fill="#E8943A" stroke="#6B3A15" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- head_chicken -->
+  <g id="head_chicken">
+    <ellipse cx="256" cy="175" rx="110" ry="110" fill="#E8943A" stroke="#6B3A15" stroke-width="5"/>
+  <ellipse cx="256" cy="190" rx="80" ry="80" fill="#FCE4C0"/>
+  </g>
+  <!-- ears_chicken -->
+  <g id="ears_chicken">
+    <circle cx="244" cy="50" r="12" fill="#E83A3A" stroke="#B82A2A" stroke-width="2"/>
+  <circle cx="256" cy="55" r="12" fill="#E83A3A" stroke="#B82A2A" stroke-width="2"/>
+  <circle cx="268" cy="50" r="12" fill="#E83A3A" stroke="#B82A2A" stroke-width="2"/>
+  <ellipse cx="256" cy="245" rx="6" ry="10" fill="#E83A3A" stroke="#B82A2A" stroke-width="2"/>
+  </g>
+  <!-- eyes_happy -->
+  <g id="eyes_happy">
+    <ellipse cx="208" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="205" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="205" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="202" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="207" cy="174" r="2.5" fill="#FFFFFF"/>
+  <ellipse cx="304" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="307" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="307" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="310" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="305" cy="174" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <!-- nose_beak_short -->
+  <g id="nose_beak_short">
+    <polygon points="256,212 242,194 270,194" fill="#E8B83A" stroke="#B8882A" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <!-- mouth_smile -->
+  <g id="mouth_smile">
+    <path d="M 234 220 Q 256 238 278 220" fill="none" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

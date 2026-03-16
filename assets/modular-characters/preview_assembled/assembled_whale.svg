@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#E8F0F8" rx="20"/>
+  <!-- body_whale -->
+  <g id="body_whale">
+    <ellipse cx="256" cy="335" rx="95" ry="110" fill="#6BA3C7" stroke="#2D4A5E" stroke-width="5"/>
+  <ellipse cx="256" cy="345" rx="65" ry="85" fill="#D4E8F1"/>
+  <path d="M 256 440 Q 216 465 201 450 Q 226 435 256 440 Z" fill="#6BA3C7" stroke="#2D4A5E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 256 440 Q 296 465 311 450 Q 286 435 256 440 Z" fill="#6BA3C7" stroke="#2D4A5E" stroke-width="3" stroke-linecap="round"/>
+  <rect x="236" y="275" width="40" height="30" fill="#6BA3C7"/>
+  </g>
+  <!-- arms_whale -->
+  <g id="arms_whale">
+    <path d="M 171 325 Q 136 305 126 330 Q 136 350 171 345 Z" fill="#6BA3C7" stroke="#2D4A5E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 341 325 Q 376 305 386 330 Q 376 350 341 345 Z" fill="#6BA3C7" stroke="#2D4A5E" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- head_whale -->
+  <g id="head_whale">
+    <ellipse cx="256" cy="175" rx="130" ry="115" fill="#6BA3C7" stroke="#2D4A5E" stroke-width="5"/>
+  <ellipse cx="256" cy="190" rx="95" ry="80" fill="#D4E8F1"/>
+  </g>
+  <!-- ears_whale -->
+  <g id="ears_whale">
+    <polygon points="256,30 236,75 264,75" fill="#4A7A9B" stroke="#2D4A5E" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <!-- eyes_happy -->
+  <g id="eyes_happy">
+    <ellipse cx="208" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="205" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="205" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="202" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="207" cy="174" r="2.5" fill="#FFFFFF"/>
+  <ellipse cx="304" cy="170" rx="22" ry="24" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+  <circle cx="307" cy="172" r="16" fill="#5C3A1A"/>
+  <circle cx="307" cy="172" r="10" fill="#1A1A1A"/>
+  <circle cx="310" cy="165" r="5" fill="#FFFFFF"/>
+  <circle cx="305" cy="174" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <!-- nose_round -->
+  <g id="nose_round">
+    <ellipse cx="256" cy="200" rx="10" ry="8" fill="#2D2D2D" stroke="#1A1A1A" stroke-width="2"/>
+  <circle cx="253" cy="198" r="2.5" fill="#555555"/>
+  </g>
+  <!-- mouth_smile -->
+  <g id="mouth_smile">
+    <path d="M 234 220 Q 256 238 278 220" fill="none" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
